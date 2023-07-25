@@ -1,0 +1,229 @@
+@font-face {
+    font-family: 'IBMPlexSans';
+    src: url(./assets/IBMPlexSans-Regular.ttf);
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'InriaSerif';
+    src: url(./assets/InriaSerif-Bold.ttf);
+    font-weight: 700;
+    font-display: swap;
+}
+
+:root{
+    --bg-color: #F8FaE4;
+    --bg-cont: #c4c2b5;
+    --soft-green: #a3af63;
+    --dark-brown: #3c3d42;
+    --light-brown: #c48456;
+    --skin-color: #f0d7a1;
+    --yellow:#f4ea66 ;
+ 
+    --IBMPlexSans:'IBMPlexSans';
+    --InriaSerif:'InriaSerif';
+}
+body{
+    background-image: url("assets/images/jason-briscoe-UV81E0oXXWQ-unsplash(1).jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    height: 100vh;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+}
+
+.brand{
+    background-color: var(--yellow);
+    border-radius: 50%;
+    overflow: hidden;
+    height: 70px;
+    width: 70px;
+}
+
+.logo-container{
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    background-color: var(--dark-brown);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.logo-img{
+    width: 50%;
+}
+
+.logo-container p{
+    font-size: 12px;
+    font-family: 'IBMPlexSans';
+    background-color: var(--yellow);
+    padding: 4px 20px;
+}
+
+.nav-container{
+    position: absolute;
+    left: 33vw;
+    box-shadow: -33vw #000;
+}
+
+#menu-toggle-inp {
+    display: none;
+}
+
+.nav-options {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;   
+    z-index: 4;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100vh;
+    overflow: hidden;
+    transition: width .5s ease-in;
+    backdrop-filter: blur(40.77px);
+}
+
+#menu-toggle-inp:checked~.nav-options {
+    width: 65vw;  
+}
+.nav-options li:first-child{
+    margin:30px 0px 0 auto
+}
+
+.open-menu {
+    width: 2.65rem;
+    height: 1.15rem;
+    color: var(--yellow);
+    z-index: 2;
+}
+
+.close-menu {
+    width: 32px;
+    height: 32px;
+    color: var(--yellow);
+    position: absolute; 
+    top: 40px;
+    right: 30px;
+}
+
+
+.nav-options li{
+    color: var(--yellow);
+}
+.nav-options li a {
+
+    font-family: var(--IBMPlexSans);
+    color: var(--yellow);
+    font-size: 1rem;
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 7vw;
+    margin: 5px 0;  
+}
+.home{
+    display: flex;
+    flex-direction: column;
+}
+
+.home-img-container{
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 40px;
+   width: clamp(10px,80vw, 400px);
+   height: 300px;
+}
+.home-img-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.home-title{
+    font-family: var(--InriaSerif);
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    padding: 40px 0;
+    color: var(--yellow);
+}
+.home-info{
+    font-family: var(--InriaSerif);
+    padding: 0 10px;
+}
+
+@media (min-width:768px) {
+    .brand{
+        width: 110px;
+        height: 110px;
+    }
+    .logo-container{
+        width: 110px;
+        height: 110px;
+    }
+    .logo-container p{
+        font-size: 18px;
+        font-family: 'IBMPlexSans';
+        background-color: var(--yellow);
+        padding: 8px 40px;
+    }    
+
+    .header-container{
+        padding: 20px 60px;
+    }
+
+    .menu-icon,.close-menu,.menu-label-close {
+        display: none;
+    }
+    .nav-options {
+        position: relative;
+        right: auto;
+        top: auto;
+        width: auto;
+        height: auto;
+        box-shadow: none;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+    }
+    
+
+    .nav-options li a {
+        padding: 0;
+        margin: clamp(10px, 3vw, 40px);
+    }
+
+    .nav-options li a:hover {
+        color: var(--yellow);
+    }
+
+    .home{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .home-title{
+        padding: 0;
+        padding-bottom: 40px;
+    }
+
+    .home-info{
+        width: 400px;
+    }
+
+    .home-img-container {
+       margin: 80px;
+    }
+    
+}
+
