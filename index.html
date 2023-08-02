@@ -14,7 +14,7 @@
     <header class="header-container">
         <div class="brand">
             <div class="logo-container">
-                <img class="logo-img" src="assets/image (2).png">
+                <img class="logo-img" src="assets/images/brandimg.webp">
                 <p>YADSERI</p>
             </div>
         </div>
@@ -33,27 +33,132 @@
                 <li><a href="#home">Inicio</a></li>
                 <li><a href="#">Comprar</a></li>
                 <li><a href="#">Vender</a></li>
-                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#about">Quiénes Somos</a></li>
                 <li><a href="#">Contáctenos</a></li>
             </ul>
         </nav>
     </header>
-    <section class="home">
-        <figure class="home-img-container">
-            <img src="assets/images/jason-briscoe-UV81E0oXXWQ-unsplash.jpg">
-        </figure>
-        <div>
-            <h1 class="home-title">
-                Bienes Raíces
-            </h1>
-            <p class="home-info">
-                Etiam ante tellus, molestie vitae venenatis vel, ultrices vel mauris. Aenean finibus urna a porttitor
-                ultrices. Cras id massa non ligula luctus pharetra eget sed dolor. Aliquam erat volutpat. Fusce
-            </p>
-        </div>
 
+    <main class="main-container">
 
-        </main>
+        <section class="home section">
+
+            <h1>Propiedades Destacadas</h1>
+            <input type="radio" id="slide1" name="slide" checked>
+            <input type="radio" id="slide2" name="slide">
+            <input type="radio" id="slide3" name="slide">
+            <div class="home-slider-container">
+                <article>
+                    <figure class="home-img-container">
+                        <img src="assets/images/HomeImg1.jpg">
+                    </figure>
+                    <div class="home-text">
+                        <h2 class="home-title">
+                            Casa de 3 cuartos y apartamento
+                        </h2>
+                        <h3 class="home-subtitle">
+                            Casa con 3 cuartos y garaje para 2 vehículos, ubicada en Corredores, Puntarenas
+                        </h3>
+                    </div>
+                </article>
+                <article>
+
+                    <figure class="home-img-container">
+                        <img src="assets/images/HomeImg2.jpg">
+                    </figure>
+                    <div class="home-text">
+                        <h2 class="home-title">
+                            Expectacular finca
+                        </h2>
+                        <h3 class="home-subtitle">
+                            Propiedad de 42 hectáreas ubicada en Golfito, Puntarenas
+                        </h3>
+                    </div>
+                </article>
+                <article>
+                    <figure class="home-img-container">
+                        <img src="assets/images/HomeImg3.jpg">
+                    </figure>
+                    <div class="home-text">
+                        <h2 class="home-title">
+                            Propiedad amplia
+                        </h2>
+                        <h3 class="home-subtitle">
+                            Propiedad de 125 hectáreas ubicada en Osa, Puntarenas
+                        </h3>
+                    </div>
+                </article>
+            </div>
+            <ul class="arrows">
+                <li>
+                    <label for="slide1"></label>
+                </li>
+                <li>
+                    <label for="slide2"></label>
+                </li>
+                <li>
+                    <label for="slide3"></label>
+                </li>
+            </ul>
+            <ul class="dots">
+                <li>
+                    <label for="slide1"></label>
+                </li>
+                <li>
+                    <label for="slide2"></label>
+                </li>
+                <li>
+                    <label for="slide3"></label>
+                </li>
+            </ul>
+        </section>
+        <!-- <section class="available section">
+            <figure class="home-img-container">
+                <img src="assets/images/jason-briscoe-UV81E0oXXWQ-unsplash.jpg">
+            </figure>
+            <div>
+                <h1 class="home-title">
+                    Bienes Raíces
+                </h1>
+                <p class="home-info">
+                    Etiam ante tellus, molestie vitae venenatis vel, ultrices vel mauris. Aenean finibus urna a
+                    porttitor
+                    ultrices. Cras id massa non ligula luctus pharetra eget sed dolor. Aliquam erat volutpat. Fusce
+                </p>
+            </div>
+        </section> -->
+
+        <section class="about section" id="about">
+            <figure class="about-img-container">
+                <img src="assets/images/AboutUsImg.webp">
+            </figure>
+            <div class="about-text">
+                <h2 class="about-title">
+                    Quiénes Somos
+                </h2>
+                <p class="about-info">
+                    En YADSERI tenemos el fin de asesorar y facilitar la compra y venta de propiedades para todas las
+                    personas. Creemos que nuestro
+                </p>
+            </div>
+        </section>
+
+        <section class="contact section">
+            <form>
+
+            </form>
+            <div>
+                <h1 class="home-title">
+                    Bienes Raíces
+                </h1>
+                <p class="home-info">
+                    Etiam ante tellus, molestie vitae venenatis vel, ultrices vel mauris. Aenean finibus urna a
+                    porttitor
+                    ultrices. Cras id massa non ligula luctus pharetra eget sed dolor. Aliquam erat volutpat. Fusce
+                </p>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
