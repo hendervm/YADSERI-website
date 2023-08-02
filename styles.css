@@ -540,7 +540,7 @@ h2{
         gap: 30px;
     }
     .about-img-container{
-    
+        max-height: 500px;
     }
     .about-text{
         background: linear-gradient(145deg, #dfe1cd, #fffff4);
