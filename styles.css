@@ -163,7 +163,7 @@ h1{
 
 .section{
     height: 100vh; 
-    scroll-snap-align: center;
+    scroll-snap-align: start;
     position: relative;
 }
 
@@ -539,7 +539,7 @@ h2{
         padding: 40px 60px;
         gap: 30px;
     }
-    .about-img-container border-image-repeat: ;{
+    .about-img-container{
         max-height: 500px;
     }
     .about-text{
